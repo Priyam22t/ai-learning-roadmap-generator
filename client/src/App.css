@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  transition: 0.4s ease;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+body.light {
+  background: #f4f4f4;
+  color: #222;
+}
+
+.app {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.toggle-btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #7f5af0;
+  color: white;
+  font-weight: 600;
+}
+
+/* Input */
+.input-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+input {
+  padding: 14px;
+  width: 300px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(45deg, #7f5af0, #6246ea);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Card */
+.card {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+body.light .card {
+  background: white;
+}
+
+/* Progress */
+.progress-container {
+  height: 12px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body.light .progress-container {
+  background: #ddd;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7f5af0, #2cb67d);
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  margin: 10px 0 25px;
+  font-weight: 600;
+}
+
+/* Phases */
+.phase {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.phase h3 {
+  color: #ffd803;
+}
+
+.phase ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.phase li {
+  padding: 8px 0;
+}
+
+.phase input {
+  margin-right: 8px;
+}
+
+/* PDF Button */
+.pdf-btn {
+  margin-top: 20px;
+  background: #2cb67d;
+}
+
+/* Loader */
+.loader {
+  margin: 40px auto;
+  border: 6px solid rgba(255,255,255,0.2);
+  border-top: 6px solid #7f5af0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
