@@ -1,0 +1,21 @@
+{
+  "name": "ai-learning-server",
+  "version": "1.0.0",
+  "description": "AI Personalized Learning Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "openai": "^6.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
